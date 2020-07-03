@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+    logstash-exporter:
+        image: coderigo/logstash-exporter:5.0
+        build:
+            context: .
