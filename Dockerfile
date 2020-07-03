@@ -3,8 +3,8 @@ FROM golang:alpine3.12 AS builder
 RUN apk update \
     && apk add \
         curl \
-        git \
         gcc \
+        git \
         make \
     && go get -u github.com/sequra/logstash_exporter \
     && cd $GOPATH/src/github.com/sequra/logstash_exporter \
